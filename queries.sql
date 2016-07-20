@@ -1,0 +1,27 @@
+
+CREATE TABLE IF NOT EXISTS `users` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(20),
+	`password` VARCHAR(200),
+	PRIMARY KEY (`id`)
+)
+  
+
+CREATE TABLE IF NOT EXISTS `message` (
+  `message_id` INT(11) NOT NULL AUTO_INCREMENT,
+  `user_id` INT(11) NOT NULL DEFAULT '0',
+  `message` TEXT,
+  PRIMARY KEY  (`message_id`)
+) 
+
+CREATE TABLE IF NOT EXISTS `files` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(20) NOT NULL,
+	`file` VARCHAR(200) NOT NULL,
+	PRIMARY KEY(`id`)
+)
+
+INSERT INTO `users` VALUES (NULL,"user1","6226ff0e50b5313f287a6904ecf242b67d00d28bd211ddae51e8f044d24de0defd4daaa32eecac9bb13f9d2fe462941838937f16613aafdd075075ef9dfe7b64"),
+(NULL,"user2","6226ff0e50b5313f287a6904ecf242b67d00d28bd211ddae51e8f044d24de0defd4daaa32eecac9bb13f9d2fe462941838937f16613aafdd075075ef9dfe7b64")
+
+SELECT * FROM `users` WHERE `username` = 'test' AND `password` = '6226ff0e50b5313f287a6904ecf242b67d00d28bd211ddae51e8f044d24de0defd4daaa32eecac9bb13f9d2fe462941838937f16613aafdd075075ef9dfe7b64'

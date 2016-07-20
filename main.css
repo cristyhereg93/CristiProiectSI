@@ -1,0 +1,102 @@
+/* CSS Document */
+body {
+    font:12px arial;
+    color: #b5b5b5;
+    text-align:center;
+    padding:35px; 
+    background-color: #11181f;
+}
+  
+div, p, span {
+    margin:0;
+    padding:0; }
+  
+input { font:12px arial; }
+  
+a {
+    color:#0000FF;
+    text-decoration:none; }
+  
+    a:hover { text-decoration:underline; }
+  
+#wrapper, #loginform {
+    margin:0 auto;
+    padding-bottom:25px;
+    background:#EBF4FB;
+    width:504px;
+    border:1px solid #ACD8F0; }
+  
+#loginform { padding-top:18px; }
+  
+    #loginform p { margin: 5px; }
+  
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
+  
+#usermsg {
+    width:395px;
+    border:1px solid #ACD8F0; }
+  
+#submit { width: 60px; }
+  
+.error { color: #ff0000; }
+  
+#menu { padding:12.5px 25px 12.5px 25px; }
+  
+.welcome { float:left; }
+  
+.logout { float:right; }
+  
+.msgln { margin:0 0 2px 0; }
+
+//Login
+
+.container {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.form {
+  width: 100%;
+  background-color: rgba(255,255,255,.2);
+  text-align: center;
+  padding: 1.25em;
+  border-radius: 5px;
+}
+
+input {
+  margin: 10 10 .4em 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.01);
+  border: 0;
+  border-bottom: 5px solid rgba(0,0,0,.12);
+  line-height: 40px;
+}
+
+[type='text'],[type='password'] {
+  padding-left: 1em;
+}
+
+[type='submit'] {
+  color: white;
+  background-color: #2980b9;
+  font-weight: 600;
+}
+
+[type='text']:focus,[type='password']:focus {
+  border: 0;
+  border-bottom: 5px solid #2980b9;
+  color: #2c3e50;
+  outline: none;
+}
